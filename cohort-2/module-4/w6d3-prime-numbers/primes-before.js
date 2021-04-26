@@ -18,8 +18,18 @@ function sieve(maximum) {
 // This is clearly not correct!
 // Some numbers are prime!
 function isPrime(number) {
+  for(let i = 2; i< number; i++) {
+    if (number % i === 0)
   return false;
 }
+}
+return true;
+}
+
+
+
+console.log(isPrime(3));
+console.log(isPrime(6));
 
 const primes = sieve(100);
 console.log(isPrime(100));
